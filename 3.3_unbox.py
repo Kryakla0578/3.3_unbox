@@ -6,10 +6,12 @@ def print_params(a=1, b='строка', c=True):
 print_params()
 print_params(b= 25,c=[1,2,3])
 
-values_list = [54.32, 'Stroka']
+values_list = [54.32, 'Stroka', '24']
+values_list_2 = [54.32, 'Stroka']
 values_dict = {'a': 78, 'b': 'stroka', 'c': False}
 
 print_params(*values_list)
+print_params(*values_list_2, 42)
 print_params(*values_dict)
 print_params(**values_dict)
 
